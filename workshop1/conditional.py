@@ -4,11 +4,11 @@ import sys
 
 n = 10
 
-#Conditional statement
+# Conditional statement
 if len(sys.argv) >= 2:
     n = int(sys.argv[1]) #type cast to int is necessary otherwise the argument will be treated as string
 
-#Chained conditional
+# Chained conditional
 if n > 0:
     print n, "is positive"
 elif n < 0:
@@ -16,7 +16,7 @@ elif n < 0:
 else:
     print n, "is neutral"
 
-#Nested conditional
+# Nested conditional
 if len(sys.argv) == 3:
     p = int(sys.argv[2])
     if n > p:
