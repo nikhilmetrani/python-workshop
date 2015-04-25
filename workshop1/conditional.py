@@ -2,30 +2,31 @@
 
 import sys
 
-n = 10
+firstArg = 10
 
 # Conditional statement
 if len(sys.argv) >= 2:
-    n = int(sys.argv[1]) #type cast to int is necessary otherwise the argument will be treated as string
+    firstArg = int(sys.argv[1]) #type cast to int is necessary otherwise the argument will be treated as string
 
 # Chained conditional
-if n > 0:
-    print n, "is positive"
-elif n < 0:
-    print n, "is negative"
+if firstArg > 0:
+    print firstArg, "is positive"
+elif firstArg < 0:
+    print firstArg, "is negative"
 else:
-    print n, "is neutral"
+    print firstArg, "is neutral"
 
 # Nested conditional
 if len(sys.argv) == 3:
-    p = int(sys.argv[2])
-    if n > p:
-        print "Before: n=", n, " p=", p
-        n, p = p, n
-        print "n, p = p, n: n=", n, " p=", p
+    secondArg = int(sys.argv[2])
+    if firstArg > secondArg:
+        print "Before: firstArg=", firstArg, " secondArg=", secondArg
+        firstArg, secondArg = secondArg, firstArg
+        print "firstArg, secondArg = secondArg, firstArg: firstArg=", firstArg, " secondArg=", secondArg
     else:
-        if n==p:
-            p = p + 1
+        if firstArg == secondArg:
+            secondArg += 1
+            print "After increment, secondArg:", secondArg
         else:
             print "recorder not necessary"
 

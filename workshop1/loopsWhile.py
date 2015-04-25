@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-index=5
-while index>0:
+index = 5
+while index > 0:
     print "While loop index:", index
     index -= 1
 
