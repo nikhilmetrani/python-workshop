@@ -31,3 +31,22 @@ except:
 print "Slices: fruits[2:3] will show elements 2 and 3 but not 4"
 
 print fruits[2:4]
+
+print "Before pop(2):", fruits
+fruits.pop(2)
+print "After pop(2):", fruits
+
+print "Before remove(2):", fruits
+fruits.remove("Durian")
+print "After remove(2):", fruits
+
+print "Before sort:", fruits
+fruits.sort()
+print "After sort:", fruits
+
+print "Before del:", fruits
+del fruits
+try:
+    print "After del:", fruits
+except:
+    print "Error: variable fruits was deleted"
